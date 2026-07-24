@@ -1,0 +1,10 @@
+{
+  "name": "SiteQuote AI",
+  "description": "An AI-native SaaS application for trade contractors to qualify leads, cross-reference local building codes via image analysis & search grounding, and generate structured proposals with Stripe deposit links.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

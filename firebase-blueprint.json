@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "users": {
+      "title": "User",
+      "description": "User profiles and contractor settings",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "companyName": { "type": "string" },
+        "trade": { "type": "string" },
+        "phone": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    },
+    "leads": {
+      "title": "Lead",
+      "description": "Client requests and qualified leads",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "clientName": { "type": "string" },
+        "clientEmail": { "type": "string" },
+        "clientPhone": { "type": "string" },
+        "trade": { "type": "string" },
+        "projectDescription": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "clientName"]
+    },
+    "proposals": {
+      "title": "Proposal",
+      "description": "Proposals and quotes generated for clients",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "clientName": { "type": "string" },
+        "trade": { "type": "string" },
+        "totalEstimate": { "type": "number" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "title"]
+    }
+  }
+}
